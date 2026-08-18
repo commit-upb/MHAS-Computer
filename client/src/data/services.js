@@ -1,0 +1,67 @@
+export const services = [
+  {
+    id: "pc-build",
+    name: "PC Build",
+    description: "Jasa perakitan komputer custom sesuai kebutuhan Anda",
+    icon: "Wrench",
+    features: [
+      "Konsultasi kebutuhan hardware",
+      "Pemilihan komponen terbaik",
+      "Perakitan profesional",
+      "Testing dan optimasi",
+      "Garansi servis",
+    ],
+  },
+  {
+    id: "pc-upgrade",
+    name: "PC Upgrade",
+    description: "Upgrade komponen komputer untuk performa lebih baik",
+    icon: "ArrowUpCircle",
+    features: [
+      "Upgrade RAM & Storage",
+      "Upgrade Graphics Card",
+      "Upgrade Processor",
+      "Upgrade Power Supply",
+      "Optimasi Sistem",
+    ],
+  },
+  {
+    id: "hardware-consultation",
+    name: "Hardware Consultation",
+    description: "Konsultasi hardware komputer oleh teknisi ahli",
+    icon: "MessageCircle",
+    features: [
+      "Analisis kebutuhan",
+      "Rekomendasi produk",
+      "Perbandingan spesifikasi",
+      "Budget planning",
+      "Solusi masalah hardware",
+    ],
+  },
+  {
+    id: "computer-repair",
+    name: "Computer Repair",
+    description: "Jasa perbaikan komputer dan laptop oleh teknisi berpengalaman",
+    icon: "Settings",
+    features: [
+      "Diagnosis masalah",
+      "Perbaikan hardware",
+      "Perbaikan software",
+      "Data recovery",
+      "Cleaning service",
+    ],
+  },
+  {
+    id: "maintenance",
+    name: "Maintenance",
+    description: "Layanan perawatan komputer untuk menjaga performa optimal",
+    icon: "Shield",
+    features: [
+      "Cleaning internal & external",
+      "Update driver & software",
+      "Optimasi performa",
+      "Backup data",
+      "Monitoring kesehatan sistem",
+    ],
+  },
+]
