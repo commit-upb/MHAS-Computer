@@ -29,6 +29,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Search input
   searchInput.value = searchQuery;
+
+  // If arrived from global search on homepage, scroll to search bar & highlight it
+  if (searchQuery) {
+    setTimeout(() => {
+      searchInput.scrollIntoView({ behavior: "smooth", block: "center" });
+      searchInput.focus();
+      searchInput.select();
+    }, 400);
+  }
+
   searchInput.addEventListener("input", (e) => {
     searchQuery = e.target.value;
     updateURL();
@@ -114,7 +124,7 @@ document.addEventListener("DOMContentLoaded", () => {
               </div>
               <div class="flex items-center justify-between">
                 <p class="text-base font-medium text-ink-black">${formatPrice(p.price)}</p>
-                <button type="button" class="w-8 h-8 rounded-full bg-ink-black text-pure-white flex items-center justify-center hover:bg-soot transition-colors duration-200" aria-label="Tambah ke keranjang">
+                <button type="button" class="add-to-cart-btn w-8 h-8 rounded-full bg-ink-black text-pure-white flex items-center justify-center hover:bg-cyan-signal hover:text-ink-black transition-colors duration-200" data-id="${p.id}" aria-label="Tambah ke keranjang">
                   <i data-lucide="shopping-cart" class="w-3.5 h-3.5"></i>
                 </button>
               </div>
@@ -142,7 +152,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 </div>
                 <div class="flex items-center justify-between">
                   <p class="text-base font-medium text-ink-black">${formatPrice(p.price)}</p>
-                  <button type="button" class="btn-pill btn-pill-filled btn-sm" aria-label="Tambah ke keranjang">
+                  <button type="button" class="add-to-cart-btn btn-pill btn-pill-filled btn-sm" data-id="${p.id}" aria-label="Tambah ke keranjang">
                     <i data-lucide="shopping-cart" class="w-3.5 h-3.5"></i>
                     Keranjang
                   </button>

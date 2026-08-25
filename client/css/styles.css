@@ -410,3 +410,41 @@ img {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+/* === Shopping Cart Drawer & Toast === */
+#cart-drawer {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.cart-item-img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cart-qty-btn {
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background-color: #fafaf9;
+  border: 1px solid #e8e6e5;
+  color: #0c0a09;
+  font-size: 12px;
+  transition: all 0.15s ease;
+}
+
+.cart-qty-btn:hover {
+  background-color: #0c0a09;
+  color: #ffffff;
+  border-color: #0c0a09;
+}
+
+#cart-toast.show {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+

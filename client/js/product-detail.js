@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <p class="heading text-ink-black mb-4">${formatPrice(product.price)}</p>
             <p class="body-lg text-warm-gray mb-6 leading-relaxed">${product.description}</p>
             <div class="flex gap-3 mb-6">
-              <button type="button" class="btn-pill btn-pill-filled btn-md flex-1">
+              <button type="button" id="detail-add-to-cart" class="btn-pill btn-pill-filled btn-md flex-1" data-id="${product.id}">
                 <i data-lucide="shopping-cart" class="w-4 h-4"></i>
                 Tambah ke Keranjang
               </button>
