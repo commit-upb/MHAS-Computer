@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tentang Kami | MHAS Computer</title>
+  <meta name="description" content="Kenali lebih dekat MHAS Computer, toko komputer terpercaya sejak 2014.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'stone-canvas': '#fafaf9',
+            'pure-white': '#ffffff',
+            'stone-border': '#e8e6e5',
+            'stone-muted': '#d6d3d1',
+            'ash-gray': '#a8a29e',
+            'warm-gray': '#78716c',
+            'ink-black': '#0c0a09',
+            'soot': '#1c1917',
+            'sky-wash': '#c1e1f7',
+            'cyan-signal': '#3ba6f1',
+            'cyan-edge': '#3398e1',
+          },
+          fontFamily: {
+            'display': ['Inter Tight', 'Inter', 'sans-serif'],
+            'body': ['Inter', 'sans-serif'],
+          },
+          borderRadius: { 'cards': '10px', 'feature-card': '16px', 'icons': '4px', 'inputs': '6px', 'buttons': '9999px', 'tags': '9999px' },
+          maxWidth: { 'page': '1200px' },
+          boxShadow: { 'subtle': '0 1px 2px 0 rgba(0,0,0,0.05)', 'md': '0 4px 16px 0 rgba(0,0,0,0.05)', 'xl': '0 12px 45px 0 rgba(17,12,46,0.12)' },
+        },
+      },
+    }
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-stone-canvas font-body min-h-screen flex flex-col">
+
+  <!-- NAVBAR -->
+  <nav id="navbar" class="navbar">
+    <div class="max-w-page mx-auto px-6 md:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center gap-2 group">
+          <span class="font-display font-medium text-ink-black text-base tracking-tight">MHAS</span>
+          <span class="text-xs uppercase tracking-[0.14em] text-warm-gray font-medium">Computer</span>
+        </a>
+        <div class="hidden md:flex items-center gap-1">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="products.html" class="nav-link">Products</a>
+          <a href="services.html" class="nav-link">Services</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+        <div class="hidden md:flex items-center gap-3">
+          <a href="contact.html" class="btn-pill btn-pill-filled btn-sm">Start free trial</a>
+        </div>
+        <button id="mobile-menu-toggle" type="button" class="md:hidden p-2 text-ink-black" aria-label="Toggle menu">
+          <i data-lucide="menu" class="w-5 h-5"></i>
+        </button>
+      </div>
+      <div id="mobile-menu" class="mobile-menu md:hidden">
+        <div class="flex flex-col gap-1 pt-2 border-t border-stone-border">
+          <a href="index.html" class="mobile-nav-link px-4 py-2 text-sm text-warm-gray hover:text-ink-black transition-colors duration-200">Home</a>
+          <a href="about.html" class="mobile-nav-link px-4 py-2 text-sm text-ink-black transition-colors duration-200">About</a>
+          <a href="products.html" class="mobile-nav-link px-4 py-2 text-sm text-warm-gray hover:text-ink-black transition-colors duration-200">Products</a>
+          <a href="services.html" class="mobile-nav-link px-4 py-2 text-sm text-warm-gray hover:text-ink-black transition-colors duration-200">Services</a>
+          <a href="contact.html" class="mobile-nav-link px-4 py-2 text-sm text-warm-gray hover:text-ink-black transition-colors duration-200">Contact</a>
+          <div class="flex items-center gap-3 px-4 pt-3 mt-2 border-t border-stone-border">
+            <a href="contact.html" class="flex-1 btn-pill btn-pill-filled justify-center py-2">Start free trial</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="flex-1">
+    <!-- Hero -->
+    <section class="bg-stone-canvas py-32 md:py-40">
+      <div class="max-w-page mx-auto px-6 md:px-8">
+        <p class="eyebrow text-warm-gray" data-aos="fade-up">Tentang Kami</p>
+        <h1 class="display text-ink-black mb-4" data-aos="fade-up" data-aos-delay="100">
+          Solusi Komputer<br><span class="highlight-span">Terpercaya</span>
+        </h1>
+        <p class="subheading text-warm-gray max-w-2xl" data-aos="fade-up" data-aos-delay="200">
+          MHAS Computer hadir sejak 2014 sebagai partner terpercaya untuk kebutuhan komputer Anda.
+        </p>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="py-16 md:py-24 bg-stone-canvas section-border">
+      <div class="max-w-page mx-auto px-6 md:px-8">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div class="stat-card bg-pure-white border border-stone-border rounded-cards p-5 text-center transition-all duration-300 hover:shadow-md" data-aos="fade-up" data-aos-delay="0">
+            <div class="w-10 h-10 mx-auto mb-3 flex items-center justify-center text-cyan-signal">
+              <i data-lucide="building-2" class="w-[18px] h-[18px]" stroke-width="1.5"></i>
+            </div>
+            <p class="heading-sm text-ink-black mb-1">10+</p>
+            <p class="caption text-warm-gray">Tahun Pengalaman</p>
+          </div>
+          <div class="stat-card bg-pure-white border border-stone-border rounded-cards p-5 text-center transition-all duration-300 hover:shadow-md" data-aos="fade-up" data-aos-delay="100">
+            <div class="w-10 h-10 mx-auto mb-3 flex items-center justify-center text-cyan-signal">
+              <i data-lucide="users" class="w-[18px] h-[18px]" stroke-width="1.5"></i>
+            </div>
+            <p class="heading-sm text-ink-black mb-1">5000+</p>
+            <p class="caption text-warm-gray">Pelanggan Puas</p>
+          </div>
+          <div class="stat-card bg-pure-white border border-stone-border rounded-cards p-5 text-center transition-all duration-300 hover:shadow-md" data-aos="fade-up" data-aos-delay="200">
+            <div class="w-10 h-10 mx-auto mb-3 flex items-center justify-center text-cyan-signal">
+              <i data-lucide="award" class="w-[18px] h-[18px]" stroke-width="1.5"></i>
+            </div>
+            <p class="heading-sm text-ink-black mb-1">50+</p>
+            <p class="caption text-warm-gray">Mitra Brand</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Story -->
+    <section class="py-16 md:py-24 bg-pure-white section-border">
+      <div class="max-w-page mx-auto px-6 md:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+          <div class="space-y-6" data-aos="fade-right">
+            <p class="eyebrow">Cerita Kami</p>
+            <h2 class="heading-lg text-ink-black">
+              Berawal Dari<br><span class="highlight-span">Passion Teknologi</span>
+            </h2>
+            <p class="body-lg text-warm-gray leading-relaxed">
+              MHAS Computer didirikan pada tahun 2014 dengan visi sederhana: menyediakan
+              komputer berkualitas dengan harga yang fair. Bermula dari sebuah toko kecil,
+              kini kami telah berkembang menjadi salah satu toko komputer terpercaya.
+            </p>
+            <p class="body text-warm-gray leading-relaxed">
+              Dengan tim teknisi berpengalaman dan ribuan produk original dari brand ternama,
+              kami siap menjadi partner terbaik untuk kebutuhan teknologi Anda.
+            </p>
+          </div>
+          <div class="bg-soot rounded-feature-card p-12 flex items-center justify-center" data-aos="fade-left">
+            <div class="text-center">
+              <p class="display text-pure-white mb-2">10+</p>
+              <p class="body-sm text-pure-white/60 uppercase tracking-wider">Tahun Melayani</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Values -->
+    <section class="py-16 md:py-24 bg-stone-canvas section-border">
+      <div class="max-w-page mx-auto px-6 md:px-8">
+        <div class="text-center mb-12" data-aos="fade-up">
+          <p class="eyebrow">Nilai Kami</p>
+          <h2 class="heading-lg text-ink-black">Yang Kami<br><span class="highlight-span">Percayai</span></h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="value-card bg-pure-white rounded-cards p-6 border border-stone-border transition-all duration-300 hover:shadow-md" data-aos="fade-up" data-aos-delay="0">
+            <div class="w-10 h-10 rounded-icons bg-sky-wash flex items-center justify-center mb-4">
+              <i data-lucide="target" class="w-[18px] h-[18px] text-cyan-edge"></i>
+            </div>
+            <h3 class="text-base font-medium text-ink-black mb-2">Misi</h3>
+            <p class="body text-warm-gray">Menyediakan solusi komputer berkualitas dengan harga terjangkau untuk semua kalangan.</p>
+          </div>
+          <div class="value-card bg-pure-white rounded-cards p-6 border border-stone-border transition-all duration-300 hover:shadow-md" data-aos="fade-up" data-aos-delay="100">
+            <div class="w-10 h-10 rounded-icons bg-sky-wash flex items-center justify-center mb-4">
+              <i data-lucide="eye" class="w-[18px] h-[18px] text-cyan-edge"></i>
+            </div>
+            <h3 class="text-base font-medium text-ink-black mb-2">Visi</h3>
+            <p class="body text-warm-gray">Menjadi toko komputer terpercaya dan terdepan di Indonesia.</p>
+          </div>
+          <div class="value-card bg-pure-white rounded-cards p-6 border border-stone-border transition-all duration-300 hover:shadow-md" data-aos="fade-up" data-aos-delay="200">
+            <div class="w-10 h-10 rounded-icons bg-sky-wash flex items-center justify-center mb-4">
+              <i data-lucide="heart" class="w-[18px] h-[18px] text-cyan-edge"></i>
+            </div>
+            <h3 class="text-base font-medium text-ink-black mb-2">Nilai</h3>
+            <p class="body text-warm-gray">Integritas, kualitas, dan kepuasan pelanggan adalah prioritas utama kami.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-soot text-pure-white">
+    <div class="max-w-page mx-auto px-6 md:px-8 py-16 md:py-20">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
+        <div class="space-y-6">
+          <a href="index.html" class="inline-flex items-center gap-2">
+            <span class="font-display font-medium text-base text-pure-white tracking-tight">MHAS</span>
+            <span class="text-xs uppercase tracking-[0.14em] text-pure-white/50 font-medium">Computer</span>
+          </a>
+          <p class="text-pure-white/50 text-sm leading-relaxed font-body max-w-xs">MHAS Computer adalah toko komputer dan hardware terpercaya yang menyediakan produk komputer, laptop, aksesoris, dan layanan terkait dengan kualitas premium.</p>
+          <div class="flex gap-3">
+            <a href="https://facebook.com/mhascomputer" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full flex items-center justify-center text-pure-white/50 hover:text-pure-white hover:bg-pure-white/10 transition-colors duration-200" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="https://twitter.com/mhascomputer" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full flex items-center justify-center text-pure-white/50 hover:text-pure-white hover:bg-pure-white/10 transition-colors duration-200" aria-label="Twitter"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+            <a href="https://instagram.com/mhascomputer" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full flex items-center justify-center text-pure-white/50 hover:text-pure-white hover:bg-pure-white/10 transition-colors duration-200" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a>
+            <a href="https://youtube.com/mhascomputer" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full flex items-center justify-center text-pure-white/50 hover:text-pure-white hover:bg-pure-white/10 transition-colors duration-200" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-sm font-medium text-pure-white/70 mb-6 uppercase tracking-wider">Produk</h4>
+          <ul class="space-y-3">
+            <li><a href="products.html?category=gaming-pc" class="text-pure-white/50 text-sm hover:text-pure-white transition-colors duration-200 font-body">Gaming PC</a></li>
+            <li><a href="products.html?category=laptop" class="text-pure-white/50 text-sm hover:text-pure-white transition-colors duration-200 font-body">Laptop</a></li>
+            <li><a href="products.html?category=components" class="text-pure-white/50 text-sm hover:text-pure-white transition-colors duration-200 font-body">Komponen</a></li>
+            <li><a href="products.html?category=accessories" class="text-pure-white/50 text-sm hover:text-pure-white transition-colors duration-200 font-body">Aksesoris</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-sm font-medium text-pure-white/70 mb-6 uppercase tracking-wider">Layanan</h4>
+          <ul class="space-y-3">
+            <li><a href="services.html#pc-build" class="text-pure-white/50 text-sm hover:text-pure-white transition-colors duration-200 font-body">PC Build</a></li>
+            <li><a href="services.html#pc-upgrade" class="text-pure-white/50 text-sm hover:text-pure-white transition-colors duration-200 font-body">PC Upgrade</a></li>
+            <li><a href="services.html#hardware-consultation" class="text-pure-white/50 text-sm hover:text-pure-white transition-colors duration-200 font-body">Konsultasi Hardware</a></li>
+            <li><a href="services.html#computer-repair" class="text-pure-white/50 text-sm hover:text-pure-white transition-colors duration-200 font-body">Perbaikan Komputer</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-sm font-medium text-pure-white/70 mb-6 uppercase tracking-wider">Hubungi Kami</h4>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-3"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-pure-white/40 mt-0.5 shrink-0"></i><span class="text-pure-white/50 text-sm font-body">Jl. Teknologi No. 123, Jakarta Selatan, Indonesia</span></li>
+            <li class="flex items-center gap-3"><i data-lucide="phone" class="w-3.5 h-3.5 text-pure-white/40 shrink-0"></i><a href="tel:+6281234567890" class="text-pure-white/50 text-sm hover:text-pure-white transition-colors duration-200 font-body">+62 812-3456-7890</a></li>
+            <li class="flex items-center gap-3"><i data-lucide="mail" class="w-3.5 h-3.5 text-pure-white/40 shrink-0"></i><a href="mailto:info@mhascomputer.com" class="text-pure-white/50 text-sm hover:text-pure-white transition-colors duration-200 font-body">info@mhascomputer.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-16 pt-8 border-t border-pure-white/10">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+          <p class="text-pure-white/40 text-sm font-body">&copy; <span id="footer-year"></span> MHAS Computer. Hak cipta dilindungi.</p>
+          <div class="flex gap-6">
+            <a href="#" class="text-pure-white/40 text-sm hover:text-pure-white transition-colors duration-200 font-body">Kebijakan Privasi</a>
+            <a href="#" class="text-pure-white/40 text-sm hover:text-pure-white transition-colors duration-200 font-body">Syarat & Ketentuan</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/shared.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>
