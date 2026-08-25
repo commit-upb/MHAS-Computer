@@ -25,24 +25,24 @@ const siteConfig = {
 
 // Brands
 const brands = [
-  { id: 1, name: "ASUS", logo: "/images/brands/asus.svg", description: "Produk komputer dan laptop gaming terkemuka" },
-  { id: 2, name: "MSI", logo: "/images/brands/msi.svg", description: "Motherboard dan graphics card performa tinggi" },
-  { id: 3, name: "NVIDIA", logo: "/images/brands/nvidia.svg", description: "Graphics card terbaik untuk gaming dan konten kreator" },
-  { id: 4, name: "AMD", logo: "/images/brands/amd.svg", description: "Processor dan graphics card inovatif" },
-  { id: 5, name: "Intel", logo: "/images/brands/intel.svg", description: "Processor untuk gaming dan produktivitas" },
-  { id: 6, name: "Logitech", logo: "/images/brands/logitech.svg", description: "Aksesoris komputer berkualitas tinggi" },
-  { id: 7, name: "Razer", logo: "/images/brands/razer.svg", description: "Gaming gear premium untuk gamers" },
-  { id: 8, name: "Corsair", logo: "/images/brands/corsair.svg", description: "Komponen dan aksesoris PC gaming" },
+  { id: 1, name: "ASUS", logo: "images/brands/asus.svg", description: "Produk komputer dan laptop gaming terkemuka" },
+  { id: 2, name: "MSI", logo: "images/brands/msi.svg", description: "Motherboard dan graphics card performa tinggi" },
+  { id: 3, name: "NVIDIA", logo: "images/brands/nvidia.svg", description: "Graphics card terbaik untuk gaming dan konten kreator" },
+  { id: 4, name: "AMD", logo: "images/brands/amd.svg", description: "Processor dan graphics card inovatif" },
+  { id: 5, name: "Intel", logo: "images/brands/intel.svg", description: "Processor untuk gaming dan produktivitas" },
+  { id: 6, name: "Logitech", logo: "images/brands/logitech.svg", description: "Aksesoris komputer berkualitas tinggi" },
+  { id: 7, name: "Razer", logo: "images/brands/razer.svg", description: "Gaming gear premium untuk gamers" },
+  { id: 8, name: "Corsair", logo: "images/brands/corsair.svg", description: "Komponen dan aksesoris PC gaming" },
 ];
 
 // Categories
 const categories = [
-  { id: "gaming-pc", name: "Gaming PC", description: "Komputer gaming performa tinggi untuk pengalaman bermain optimal", icon: "monitor", image: "/images/categories/gaming-pc.jpg" },
-  { id: "laptop", name: "Laptop", description: "Laptop untuk kebutuhan kerja, gaming, dan kreativitas", icon: "laptop", image: "/images/categories/laptop.jpg" },
-  { id: "components", name: "Components", description: "Komponen komputer untuk upgrade dan build PC sendiri", icon: "cpu", image: "/images/categories/components.jpg" },
-  { id: "accessories", name: "Accessories", description: "Aksesoris komputer untuk produktivitas dan gaming", icon: "keyboard", image: "/images/categories/accessories.jpg" },
-  { id: "monitor", name: "Monitor", description: "Monitor untuk gaming, desain, dan produktivitas", icon: "monitor", image: "/images/categories/monitor.jpg" },
-  { id: "networking", name: "Networking", description: "Peralatan jaringan untuk rumah dan kantor", icon: "wifi", image: "/images/categories/networking.jpg" },
+  { id: "gaming-pc", name: "Gaming PC", description: "Komputer gaming performa tinggi untuk pengalaman bermain optimal", icon: "monitor", image: "images/categories/gaming-pc.jpg" },
+  { id: "laptop", name: "Laptop", description: "Laptop untuk kebutuhan kerja, gaming, dan kreativitas", icon: "laptop", image: "images/categories/laptop.jpg" },
+  { id: "components", name: "Components", description: "Komponen komputer untuk upgrade dan build PC sendiri", icon: "cpu", image: "images/categories/components.jpg" },
+  { id: "accessories", name: "Accessories", description: "Aksesoris komputer untuk produktivitas dan gaming", icon: "keyboard", image: "images/categories/accessories.jpg" },
+  { id: "monitor", name: "Monitor", description: "Monitor untuk gaming, desain, dan produktivitas", icon: "monitor", image: "images/categories/monitor.jpg" },
+  { id: "networking", name: "Networking", description: "Peralatan jaringan untuk rumah dan kantor", icon: "wifi", image: "images/categories/networking.jpg" },
 ];
 
 // Products
@@ -53,7 +53,7 @@ const products = [
     category: "gaming-pc",
     brand: "Custom Build",
     price: 15000000,
-    image: "/images/products/pc-gaming-rgb.jpg",
+    image: "images/products/pc-gaming-rgb.jpg",
     description: "PC gaming performa tinggi dengan RGB lighting untuk pengalaman bermain optimal.",
     specs: {
       processor: "AMD Ryzen 7 5800X",
@@ -72,7 +72,7 @@ const products = [
     category: "laptop",
     brand: "ASUS",
     price: 18500000,
-    image: "/images/products/laptop-rog.jpg",
+    image: "images/products/laptop-rog.jpg",
     description: "Laptop gaming ASUS ROG dengan performa maksimal untuk gaming dan produktivitas.",
     specs: {
       processor: "Intel Core i7-12700H",
@@ -90,7 +90,7 @@ const products = [
     category: "components",
     brand: "NVIDIA",
     price: 8500000,
-    image: "/images/products/rtx-4070.jpg",
+    image: "images/products/rtx-4070.jpg",
     description: "Graphics card NVIDIA RTX 4070 Super untuk gaming 1440p dan content creation.",
     specs: {
       memory: "12GB GDDR6X",
@@ -106,7 +106,7 @@ const products = [
     category: "monitor",
     brand: "ASUS",
     price: 6500000,
-    image: "/images/products/monitor-4k.jpg",
+    image: "images/products/monitor-4k.jpg",
     description: "Monitor 4K untuk desain grafis dan content creation dengan akurasi warna tinggi.",
     specs: {
       size: "27 inch",
@@ -123,7 +123,7 @@ const products = [
     category: "accessories",
     brand: "Logitech",
     price: 1200000,
-    image: "/images/products/keyboard-rgb.jpg",
+    image: "images/products/keyboard-rgb.jpg",
     description: "Keyboard mechanical gaming dengan RGB lighting dan switch Cherry MX.",
     specs: {
       switch: "Cherry MX Red",
@@ -139,7 +139,7 @@ const products = [
     category: "accessories",
     brand: "Razer",
     price: 850000,
-    image: "/images/products/mouse-wireless.jpg",
+    image: "images/products/mouse-wireless.jpg",
     description: "Mouse gaming wireless dengan sensor presisi tinggi dan battery tahan lama.",
     specs: {
       sensor: "Focus Pro 30K",
@@ -226,7 +226,7 @@ const testimonials = [
     id: 1,
     name: "Ahmad Rizky",
     role: "Gamer Profesional",
-    avatar: "/images/testimonials/avatar-1.jpg",
+    avatar: "images/testimonials/avatar-1.jpg",
     rating: 5,
     comment: "Pelayanan sangat profesional! PC gaming yang saya beli performanya luar biasa. Tim MHAS Computer sangat membantu dalam memilih komponen yang tepat.",
   },
@@ -234,7 +234,7 @@ const testimonials = [
     id: 2,
     name: "Sarah Dewi",
     role: "Desainer Grafis",
-    avatar: "/images/testimonials/avatar-2.jpg",
+    avatar: "images/testimonials/avatar-2.jpg",
     rating: 5,
     comment: "Monitor 4K yang saya beli di sini kualitas warnanya sangat akurat. Cocok untuk pekerjaan desain grafis saya. Terima kasih MHAS Computer!",
   },
@@ -242,7 +242,7 @@ const testimonials = [
     id: 3,
     name: "Budi Santoso",
     role: "Content Creator",
-    avatar: "/images/testimonials/avatar-3.jpg",
+    avatar: "images/testimonials/avatar-3.jpg",
     rating: 5,
     comment: "Laptop gaming yang saya beli sangat memadai untuk editing video dan streaming. Harga juga sangat kompetitif dibanding toko lain.",
   },
@@ -250,7 +250,7 @@ const testimonials = [
     id: 4,
     name: "Rina Marlina",
     role: "Mahasiswa Teknik",
-    avatar: "/images/testimonials/avatar-4.jpg",
+    avatar: "images/testimonials/avatar-4.jpg",
     rating: 4,
     comment: "Pelayanan ramah dan cepat. Laptop yang saya beli sudah sesuai kebutuhan untuk kuliah dan tugas-tugas teknik. Recommended!",
   },

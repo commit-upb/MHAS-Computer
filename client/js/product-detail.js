@@ -32,11 +32,13 @@ document.addEventListener("DOMContentLoaded", () => {
       <div class="max-w-page mx-auto px-6 md:px-8">
         <h2 class="heading-sm text-ink-black mb-6">Produk Terkait</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          ${related.map(item => `
+          ${related.map(item => {
+            const itemImg = window.getFallbackImage ? window.getFallbackImage(item.image, item.name) : item.image;
+            return `
             <a href="product-detail.html?id=${item.id}" class="group block" data-aos="fade-up">
               <div class="bg-pure-white border border-stone-border rounded-cards overflow-hidden transition-all duration-300 hover:shadow-md hover:border-stone-muted p-0">
                 <div class="relative h-48 bg-soot overflow-hidden">
-                  <div class="absolute inset-0 bg-cover bg-center bg-no-repeat group-hover:scale-105 transition-transform duration-500" style="background-image: url('${item.image}')"></div>
+                  <div class="absolute inset-0 bg-cover bg-center bg-no-repeat group-hover:scale-105 transition-transform duration-500" style="background-image: url('${itemImg}')"></div>
                 </div>
                 <div class="p-4">
                   <p class="caption text-warm-gray mb-1">${item.category}</p>
@@ -45,10 +47,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 </div>
               </div>
             </a>
-          `).join("")}
+          `}).join("")}
         </div>
       </div>
     </section>` : "";
+
+  const mainProductImg = window.getFallbackImage ? window.getFallbackImage(product.image, product.name) : product.image;
 
   contentEl.innerHTML = `
     <section class="bg-stone-canvas py-4 border-b border-stone-border">
@@ -59,12 +63,12 @@ document.addEventListener("DOMContentLoaded", () => {
         </a>
       </div>
     </section>
-
+ 
     <section class="py-12 md:py-16 bg-stone-canvas">
       <div class="max-w-page mx-auto px-6 md:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div class="relative bg-pure-white border border-stone-border rounded-cards overflow-hidden aspect-square" data-aos="fade-right">
-            <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('${product.image}')"></div>
+            <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('${mainProductImg}')"></div>
           </div>
           <div class="flex flex-col" data-aos="fade-left">
             <span class="inline-flex items-center gap-2 px-3 py-1 rounded-tags body-sm font-medium bg-sky-wash text-cyan-edge w-fit mb-3">${product.category}</span>

@@ -48,6 +48,16 @@ function setActiveLink() {
   });
 }
 
+// === Image Helper & Fallback ===
+function getFallbackImage(url, textContext = '') {
+  if (url && typeof url === 'string' && url.trim() !== '') {
+    return url;
+  }
+  return `https://placehold.co/600x400/e8e6e5/0c0a09?text=${encodeURIComponent(textContext || 'MHAS Computer')}`;
+}
+
+window.getFallbackImage = getFallbackImage;
+
 // === Footer Year ===
 function initFooter() {
   const yearEl = document.getElementById("footer-year");

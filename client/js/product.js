@@ -98,11 +98,13 @@ document.addEventListener("DOMContentLoaded", () => {
     if (viewMode === "grid") {
       gridEl.classList.remove("hidden");
       listEl.classList.add("hidden");
-      gridEl.innerHTML = filtered.map(p => `
+      gridEl.innerHTML = filtered.map(p => {
+        const imgUrl = window.getFallbackImage ? window.getFallbackImage(p.image, p.name) : p.image;
+        return `
         <a href="product-detail.html?id=${p.id}" class="group block" data-aos="fade-up">
           <div class="bg-pure-white border border-stone-border rounded-cards overflow-hidden h-full transition-all duration-300 hover:shadow-md hover:border-stone-muted p-0">
             <div class="relative h-48 bg-soot overflow-hidden">
-              <div class="absolute inset-0 bg-cover bg-center bg-no-repeat group-hover:scale-105 transition-transform duration-500" style="background-image: url('${p.image}')"></div>
+              <div class="absolute inset-0 bg-cover bg-center bg-no-repeat group-hover:scale-105 transition-transform duration-500" style="background-image: url('${imgUrl}')"></div>
             </div>
             <div class="p-4">
               <p class="caption text-warm-gray mb-1">${p.category}</p>
@@ -119,16 +121,18 @@ document.addEventListener("DOMContentLoaded", () => {
             </div>
           </div>
         </a>
-      `).join("");
+      `}).join("");
     } else {
       gridEl.classList.add("hidden");
       listEl.classList.remove("hidden");
-      listEl.innerHTML = filtered.map(p => `
+      listEl.innerHTML = filtered.map(p => {
+        const imgUrl = window.getFallbackImage ? window.getFallbackImage(p.image, p.name) : p.image;
+        return `
         <a href="product-detail.html?id=${p.id}" class="group block" data-aos="fade-up">
           <div class="bg-pure-white border border-stone-border rounded-cards overflow-hidden transition-all duration-300 hover:shadow-md hover:border-stone-muted p-0">
             <div class="flex">
               <div class="relative w-40 h-40 bg-soot overflow-hidden shrink-0">
-                <div class="absolute inset-0 bg-cover bg-center bg-no-repeat group-hover:scale-105 transition-transform duration-500" style="background-image: url('${p.image}')"></div>
+                <div class="absolute inset-0 bg-cover bg-center bg-no-repeat group-hover:scale-105 transition-transform duration-500" style="background-image: url('${imgUrl}')"></div>
               </div>
               <div class="flex-1 p-4">
                 <p class="caption text-warm-gray mb-1">${p.category}</p>
@@ -147,7 +151,7 @@ document.addEventListener("DOMContentLoaded", () => {
             </div>
           </div>
         </a>
-      `).join("");
+      `}).join("");
     }
 
     lucide.createIcons();
