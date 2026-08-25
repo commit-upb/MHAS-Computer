@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="text-center" data-aos="fade-up">
           <h1 class="heading-lg text-ink-black mb-4">Produk Tidak Ditemukan</h1>
           <p class="body text-warm-gray mb-8">Produk yang Anda cari tidak tersedia.</p>
-          <a href="products.html" class="btn-pill btn-pill-filled btn-md">Kembali ke Produk</a>
+          <a href="product.html" class="btn-pill btn-pill-filled btn-md">Kembali ke Produk</a>
         </div>
       </div>`;
     lucide.createIcons();

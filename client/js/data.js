@@ -8,7 +8,7 @@ const siteConfig = {
     email: "info@mhascomputer.com",
     address: "Jl. Teknologi No. 123, Jakarta Selatan, Indonesia",
     whatsapp: "6281234567890",
-    maps: "https://maps.google.com",
+    maps: "https://maps.app.goo.gl/ARsDfFo88MsBetvc7",
   },
   social: {
     instagram: "https://instagram.com/mhascomputer",
